@@ -10,6 +10,7 @@
     <body>
         <header>
             <section>
+                <img src="asset/chinese.png"/>
                 <a href="index.html">
                     <h1> Kai-Wen Cheng</h1>
                 </a>
@@ -35,7 +36,12 @@
             <section>
                 <details>
                     <summary><h3>Introduction</h3></summary>
-                    <img src="asset/profile.png" alt="profile picture">
+                    <picture>
+                        <!-- Big -->
+                        <source srcset="asset/profile.png" media="(min-width:800px)"/>
+                        <!-- small -->
+                        <source srcset="asset/profile-small.png"/>
+                    </picture>
                     <p>Kai-Wen Cheng, also known as Kai, is a current 3rd year Electrical Engineering studying at the University of California,
                         San Diego. He is originally from <b><a href="https://en.wikipedia.org/wiki/Taipei">Taipei, Taiwan</a></b>, and he moved to the
                         US when he was 15 years old. Kai is passionate about <strong>Electronics, Software Design, Computer System</strong>, and numerous field of
