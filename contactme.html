@@ -54,10 +54,15 @@
                 <form action="" method="">
                     <fieldset>
                         <legend>Basic Info:</legend>
-                        <label for="name">Name: </label>
-                        <input type="text" id="name", name="name">
-                        <label for="email">Email: </label>
-                        <input type="email" id="email", name="email">
+                        <div class="form-field">
+                            <label for="name">Name: </label>
+                            <input type="text" id="name", name="name">
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email: </label>
+                            <input type="email" id="email", name="email">
+                        </div>
+
                     </fieldset>
 
                     <fieldset>
@@ -82,7 +87,7 @@
 
                           </select>
                     
-                        <div>
+                          <div class="form-field">
                             <label for="message">Your Message:</label>
                             <div>
                                 <textarea id="message" name="message" rows="4" cols="50" placeholder="Hi Kai, My name is..."></textarea>
