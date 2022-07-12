@@ -2,12 +2,10 @@
 <html lang="en">
     <head>
         <meta charset='utf-8'/>
-        <title>Kai-Wen Cheng | Personal</title>
+        <title>Kai-Wen Cheng | Professional</title>
         <style>
             * {border: 1px solid black;}
         </style>
-
-
     </head>
     <body>
         <header>
@@ -30,8 +28,17 @@
 
             <form>
                 <label for="search">Search: </label>
-                <input type="search" id="search">
+                <input type="text" name="search" id="search"/>
+                <datalist for="search">
+                    <option value="professional">Professional</option>
+                    <option value="resume">Resume</option>
+                    <option value="personal">Personal</option>
+                    <option value="experience">Experience</option>
+                </datalist>
             </form>
+            <template>
+                <p>Latest Update: </p>
+            </template>
         </header>
         <main>
             <h2>Personal Main Page</h2>

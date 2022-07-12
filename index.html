@@ -2,19 +2,17 @@
 <html lang="en">
     <head>
         <meta charset='utf-8'/>
-        <title>Kai-Wen Cheng</title>
+        <title>Kai-Wen Cheng | Professional</title>
         <style>
             * {border: 1px solid black;}
         </style>
-
-
     </head>
     <body>
         <header>
             <section>
                 <a href="index.html" title="back to home">
                 <img src="asset/chinese.png" alt="chinese caligraphy"/>
-                    <h1>Kai-Wen Cheng</h1>
+                    <h1> Kai-Wen Cheng</h1>
                 </a>
                 <p>How to Pronouce: <audio src="asset/pronounciation.mp3" controls>Audio Not Supported</audio></p>
                 <i>True heroism is to see the world as it, and to love it. -Roman Rolland</i>
@@ -27,11 +25,20 @@
                     <li><a href="contactme.html">Contact Me</a></li>
                 </ol>
             </nav>
-            
+
             <form>
                 <label for="search">Search: </label>
-                <input type="search" id="search">
+                <input type="text" name="search" id="search"/>
+                <datalist for="search">
+                    <option value="professional">Professional</option>
+                    <option value="resume">Resume</option>
+                    <option value="personal">Personal</option>
+                    <option value="experience">Experience</option>
+                </datalist>
             </form>
+            <template>
+                <p>Latest Update: </p>
+            </template>
         </header>
         <main>
             <h2>Main Page</h2>
