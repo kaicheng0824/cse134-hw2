@@ -56,10 +56,18 @@
                     <div class="formField">
                         <label for="contactType">Subject Matter:</label>
                         <select id="contactType" name="contactType">
-                            <option value="recruiting">Recruiting</option>
-                            <option value="networking">Networking</option>
-                            <option value="suggestion">Asking for Suggestions</option>
-                            <option value="site-feedback">Site Feedback</option>
+                            <optgroup label="Professional">
+                                <option value="recruiting">Recruiting</option>
+                                <option value="networking">Networking</option>
+                            </optgroup>
+                            <optgroup label="Personal">
+                                <option value="friends">Make a Friend</option>
+                                <option value="suggestion">Asking for Suggestions</option>
+                            </optgroup>
+                            <optgroup label="Site Related">
+                                <option value="site-feedback">Site Feedback</option>
+                                <option value="problem">Report a Problem</option>
+                            </optgroup>
                             <option value="other">Other</option>
                           </select>
                     </div>
