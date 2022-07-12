@@ -114,15 +114,9 @@
             <script>
                 var c = document.getElementById("myCanvas");
                 var ctx = c.getContext("2d");
-
-                // Create gradient
-                var grd = ctx.createLinearGradient(0, 0, 1000, 0);
-                grd.addColorStop(0, "black");
-                grd.addColorStop(1, "white");
-
-                // Fill with gradient
-                ctx.fillStyle = grd;
-                ctx.fillRect(10, 10, 150, 80);
+                ctx.moveTo(0, 50);
+                ctx.lineTo(1000, 50);
+                ctx.stroke();
             </script>
         </footer>
     </body>
