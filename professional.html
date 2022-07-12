@@ -32,14 +32,17 @@
             </nav>
 
             <form>
-                <label for="search">Search: </label>
-                <input type="text" name="search" id="search"/>
-                <!-- <datalist for="search">
-                    <option value="professional">Professional</option>
-                    <option value="resume">Resume</option>
-                    <option value="personal">Personal</option>
-                    <option value="experience">Experience</option>
-                </datalist> -->
+                <label for="search">Search:</label>
+                <input list="search" name="query" id="query">
+                <datalist id="search">
+                    <option value="Professional"></option>
+                    <option value="Resume"></option>
+                    <option value="Personal"></option>
+                    <option value="Experience"></option>
+                </datalist>
+                <button type="submit">
+                    Submit
+                </button>
             </form>
             <template>
                 <p>Latest Update: </p>
