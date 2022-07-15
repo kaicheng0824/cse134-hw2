@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 :root {
     --vw-lg: 1920px;
     --vw-md: 1366px;
