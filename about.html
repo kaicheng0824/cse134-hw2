@@ -6,84 +6,132 @@
         <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
         <link rel="stylesheet" href="header_footer_subpage.css">
         <style>
-
-            img {
-                border-radius: 2em;
+            body {
+                min-width: 750px; max-width:1200px;
             }
-            main {
-                background-color: white;
-                display: grid;
-                grid-template-rows: 1fr 1fr 1fr;
-                grid-template-columns: 1fr;
+            @media screen and (min-width:1000px) {
+                img {
+                    border-radius: 2em;
+                }
+                main {
+                    background-color: white;
+                    display: grid;
+                    grid-template-rows: 2fr 1fr 1fr;
+                    grid-template-columns: 1fr;
+                }
+
+                summary {
+                    list-style-type: none;
+                }
+
+                section {
+                    padding: 0.5em;
+                    border: solid 1px black;
+                }
+
+                section > ul {
+                    border: solid 1px black;
+                    display: grid;
+                    padding: 1em;
+                    grid-template-columns: 1fr 2fr;
+                    grid-template-rows: 1fr; 
+                }
+
+                #intro {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    border: solid 1px black;
+                    grid-row: 1;
+                    /* display: block; */
+                    /* grid-template-columns: 1fr 2fr; */
+                }
+
+                #education {
+                    margin-top: 0px;
+                    margin-bottom: auto;
+                    border: solid 1px black;
+                    grid-row: 2;
+                    display: block;
+                    /* grid-template-columns: 1fr 2fr; */
+                }
+
+                #funfact {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    grid-row: 3;
+                    display: block;
+                    /* grid-template-columns: 1fr 2fr; */
+                }
+
+                #intro_pic {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    padding: 0.5em;
+                    border: solid 1px black;
+                }
+
+                #intro_text {
+                    text-align: left;
+                    padding: 0.5em;
+                    border: solid 1px black;
+                }
+
+                #intro_text > p::first-letter {
+                    font-size: 1.5em;
+                }
+
+                #education_img {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    padding: 0.5em;
+                    border: solid 1px black;                
+                }
+
+                #education_text {
+                    padding: 0.5em;
+                    border: solid 1px black;
+                }
+
+                #education_text > ul > li {
+                    padding: 0.5em;
+                    text-decoration: underline;
+                    
+                }
+
+                #education_text > ul > li:hover {
+                    color: brown;
+                }
+
+                #education_text > ul > li > details > ul {
+                    color: black;
+                }
+
+
+                #intro_text a {
+                    margin: 0;
+                    padding: 0;
+                    text-decoration: underline;
+                    display: inline; 
+                }
+
+                #intro_text p {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+
+                #intro_text > aside > details:hover {
+                    color: brown;
+                }
+
+                #major-list {
+                    font-size: 0.8em;
+                    padding: 1em;
+                }
+
+                a[href^=“http“] {
+                    color: brown;
+                }
             }
-
-            summary {
-                list-style-type: none;
-            }
-
-            section {
-                padding: 0.5em;
-                border: solid 1px black;
-            }
-
-            section > ul {
-                border: solid 1px black;
-                display: grid;
-                padding: 1em;
-                grid-template-columns: 1fr 2fr;
-                grid-template-rows: 1fr; 
-            }
-
-            #intro {
-                border: solid 1px black;
-                grid-row: 1;
-                /* display: block; */
-                /* grid-template-columns: 1fr 2fr; */
-            }
-
-            #education {
-                border: solid 1px black;
-                grid-row: 2;
-                display: block;
-                /* grid-template-columns: 1fr 2fr; */
-            }
-
-            #funfact {
-                grid-row: 3;
-                display: block;
-                /* grid-template-columns: 1fr 2fr; */
-            }
-
-            #intro_pic {
-                margin-top: auto;
-                margin-bottom: auto;
-                padding: 0.5em;
-                border: solid 1px black;
-            }
-
-            #intro_text {
-                text-align: left;
-                padding: 0.5em;
-                border: solid 1px black;
-            }
-
-            #intro_text a {
-                margin: 0;
-                padding: 0;
-                text-decoration: underline;
-                display: inline;
-            }
-
-            #intro_text p {
-                margin-top: 10px;
-                margin-bottom: 20px;
-            }
-
-            #intro_text > aside > details:hover {
-                color: brown;
-            }
-
-
 
             /*#education {
                 grid-row: 2;
@@ -193,7 +241,7 @@
             </section>
             <section id="education">
                 <ul>
-                    <li>
+                    <li id="education_img">
                         <figure>
                             <picture>
                                 <img width="300px" height="200px" src="asset/ucsd.png"/>
@@ -201,12 +249,58 @@
                             <figcaption>UC San Diego's Giesel Library</figcaption>
                         </figure>   
                     </li>
-                    <li>
+                    <li id="education_text">
                         <h3 style="text-align: center;">Education</h3>
                         <ul>
-                            <li>University of California - San Deigo, Sept 2019 - Present</li>
-                            <li>EF Academy New York, Sept 2016 - May 2019</li>
-                            <li>Taipei Fuhsing Private School Sept 2013 - June 2016</li>
+                            <li>
+                                <details>
+                                    <summary>
+                                        University of California - San Deigo 
+                                    </summary> 
+                                    <ul id="major-list">
+                                        <li style="text-decoration: none;"></li>
+                                            Sept 2019 - Present
+                                        </li>
+                                        <li style="text-decoration: none;"></li>
+                                            BSc in Electrical Engineering
+                                        </li>
+                                        <li style="text-decoration: none;"></li>
+                                            BA in Economics
+                                        </li>
+                                    </ul>
+
+                                </details>
+                                </li>
+                            <li>
+                                <details>
+                                    <summary>
+                                        EF Academy New York
+                                    </summary> 
+                                    <ul id="hs-list">
+                                        <li style="text-decoration: none;"></li>
+                                            Sept 2016 - May 2019
+                                        </li>
+                                        <li style="text-decoration: none;"></li>
+                                            IB Diploma
+                                        </li>
+                                    </ul>
+                                </details>
+                                </li>
+                            <li>
+                                <details>
+                                    <summary>
+                                        Taipei Fuhsing Private School 
+                                    </summary> 
+                                    <ul id="middleschool-list">
+                                        <li style="text-decoration: none;"></li>
+                                            Sept 2013 - June 2016
+                                        </li>
+                                        <li style="text-decoration: none;"></li>
+                                            Taiwanese Middle School Diploma
+                                        </li>
+                                    </ul>
+                                </details>
+                                </li>
                         </ul>                        
                     </li>
                 </ul>
