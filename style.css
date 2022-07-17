@@ -15,6 +15,20 @@
     font-family: Sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+header a:visited {
+    text-decoration: none;
+    color: var(--default-font-color);
+}
+
+main a:visited {
+    text-decoration: none;
+    color: var(--default-font-color);
+}
+
 ol, ul {
     text-align: center;
     list-style-type: none;
@@ -27,7 +41,6 @@ img {
 
 body {
     color: var(--secondary_color);
-    font-family: Sans-serif;
 }
 
 header {
@@ -41,6 +54,7 @@ footer {
     margin: 1em 1em 1em 1em;
     padding: 1em 1em 1em 1em;
     border: 1px solid black;
+    font-size: 1.5em;
 }
 
 header > section * {
@@ -84,6 +98,7 @@ header > section > ol {
     /* border: 1px solid black; */
     grid-row: 2;
     grid-column: 3;
+
 }
 
 #audio > p > audio{
@@ -165,3 +180,17 @@ footer > ul #legal {
     grid-column: 1 / span 10;
 }
 
+header > section > ol > li > h1 {
+    color: black;
+    animation-name: name;
+}
+
+@keyframes name {
+    from {color: black;}
+    to {color: blue;}
+}
+
+#profile_pic:hover {
+    content: url('asset/profile-3.png'); 
+    /* transition: 1s; */
+}
